@@ -1,6 +1,9 @@
 @charset 'utf-8';
 
 * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-size: 14px;    
 }
 
@@ -13,6 +16,81 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    background-color: aqua;
+ 
     
+}
+ul, li {
+    list-style: none;    
+}
+
+a, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+header {
+
+}
+
+.top {
+    background-color: #1B4FA0;
+    width: 100%;
+}
+
+.top .bg {
+    float: left;
+    background-color: #143b78;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+}
+.top .bg:hover {
+    color: #666;
+}
+.top .gnb {
+    text-align: right;    
+}
+
+.top .gnb li {
+    display: inline-block;
+}
+
+.top .gnb li a {
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+}
+.top .gnb li a:hover {
+    color: #666;
+}
+
+nav {
+    background-color: #eee;
+}
+
+nav .logo {
+    float: left;
+    padding: 16px 0;    
+}
+
+nav .lnb li {
+    display: inline-block;
+    width: 13%;
+}
+
+nav .lnb li a {
+    display: block;
+    padding : 27px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav .lnb li a:hover {
+    color: #005baa;
 }
