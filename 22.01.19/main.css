@@ -1,0 +1,195 @@
+@charset 'utf-8';
+
+/* 공통 변수선언(변수의 모든 것) */
+/* 모든 태그에 다 적용이 된다. */
+:root {
+    --img-box1: url('https://www.icqa.or.kr/images/cn/box1_1_bg.png');
+    --img-box2: url('https://www.icqa.or.kr/images/cn/box1_2_bg.png');
+    --img-box3: url('https://www.icqa.or.kr/images/cn/box1_3_bg.png');
+    --img-box4: url('https://www.icqa.or.kr/images/cn/box1_4_bg.png');
+    --font-default: '굴림체', '돋움', Arial;
+}
+
+/* 공통 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin-right: 0;
+    font-size: 20px;    
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+ul, li {
+    list-style: none;
+    
+}
+a, a:hover, a:link, a:active {    
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;    
+}
+
+/* 상단 스타일 */
+.top {
+    background-color: #1B4FA0;
+    width: 100%;
+}
+
+.top .bg {
+    background-color: #143B78;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    float: left;
+}
+.top .bg:hover {
+    color: #ccc;
+}
+
+.top ul.gnb {
+    text-align : right;
+
+}
+.top ul li {
+    display: inline-block;
+}
+
+.top ul li a{
+    display: block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    color: white;
+    float: left;
+}
+
+.top ul li a:hover {
+    color: #ccc;
+}
+
+nav {
+    background-color: #eee;
+    /* margin: -20px; */
+}
+
+nav .logo {    
+    float: left;
+    padding: 16px 0;
+    width: 30%;
+}
+
+nav .lnb {
+    width: 70%;    
+    display: inline-block;
+}
+
+nav .lnb li {
+    float: left;
+    width: 20%;        
+}
+
+nav .lnb li a {
+    display: block;
+    /* padding: 27px 0; */
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+nav .lnb li a:hover {
+    color: #005baa;
+}
+
+section {
+    width: 100%;
+    margin-top: 25px;
+}
+
+section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* section1 */
+#section1 ul li {
+    background-color: darkgray;
+    float: left;
+    min-height: 225px;
+    text-align: center;
+    width: 23%;
+    margin-left: 2%;    
+}
+
+#section1 ul li a{
+    color: white;
+    display: block;
+    padding: 30px 0;
+    width: 100%;
+}
+
+#section1 ul li h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#section1 ul li p {
+    font-size: 0.8rem;
+    margin-top: 15px;
+    border: 1px solid white;
+    padding: 5px 15px;
+    display: inline-block;
+}
+#section1 .box {
+    background-position: right bottom;
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+#section1 #box1 {
+    background-color: #00A882;
+    margin-left: 0;
+    background-image: var(--img-box1);
+}
+
+#section1 #box1:hover {
+    background-color: #00c29a;
+    
+}
+
+#section1 #box2 {
+    background-color: #2263C8;
+    background-image: var(--img-box2);
+}
+
+#section1 #box2:hover {
+    background-color: #116cff;
+}
+
+#section1 #box3 {
+    background-color: #2083CB;
+    background-image: url('https://www.icqa.or.kr/images/cn/box1_3_bg.png');
+}
+
+#section1 #box3:hover {
+    background-color: #1995ee;
+}
+
+#section1 #box4 {
+    background-color: #F6893E;
+    background-image: url('https://www.icqa.or.kr/images/cn/box1_4_bg.png');
+}
+
+#section1 #box4:hover {
+    background-color: #ff9d5c;
+}
