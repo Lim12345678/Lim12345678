@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 150px;
+    height : 150px;
+    background-color: tomato;    
+    border: 1px solid black; 
+
+    animation-duration: 1s;
+    animation-name: slidein;
+
+    /*애니메이션 반복재생*/
+    animation-iteration-count: infinite;
+    /*왔다갔다 반복*/
+    animation-direction: alternate;
+    
+}
+
+
+
+/*기본 구조 : from에서 시작해서 to로 끝난다.*/
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        /* width: 300%; */
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        margin-top: 300px;
+    }
+
+    75% {
+        background-color: cyan;
+    }
+
+    to {
+        /* width: 100%; */
+        margin-left: 0%;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+    }
+    
+}
+

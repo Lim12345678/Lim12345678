@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2.html</title>
+    <style>
+        div {
+            background-color: tomato;
+            border: 5px double black;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;            
+            box-sizing: border-box;
+
+            animation-duration: 1s;
+            animation-name: ani;            
+            /* animation-iteration-count: infinite; */
+        }
+        div:nth-child(2) {
+            background-color: violet;
+            padding: 30px;
+        }
+        @keyframes ani {
+            from{   
+                margin-left: 10%;
+            }
+            to {
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>박스1</div>
+    <div>박스2</div>
+</body>
+</html>
