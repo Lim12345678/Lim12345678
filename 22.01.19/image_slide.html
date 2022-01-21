@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼으로 이미지 이동하기</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #banner {
+            width: 2000px;
+            margin-left: 0;
+        }
+        #frame {            
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            margin : 0 auto;            
+            overflow: hidden;
+        }
+        .banner1 { 
+            background-image: url('/img/1.jpg');
+            color: white;            
+        }
+
+        .banner2 {
+            background-image: url('/img/2.jpg');
+        }
+        .banner3 {
+            background-image: url('/img/3.jpg');
+            
+        }
+        .banner1, .banner2, .banner3 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-size: cover;            
+        }        
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="frame">
+            <div id="banner">
+                <div class="banner1">1</div>
+                <div class="banner2">2</div>
+                <div class="banner3">3</div>
+            </div>
+        </div>
+        <button onclick="left()">왼쪽</button>
+        <button onclick="right()">오른쪽</button>
+    </div>
+</body>
+
+<script>
+    setInterval(function(){ 
+        $('#banner').delay(700);        
+        $('#banner').animate({marginLeft: "-200px"})
+        $('#banner').delay(700);
+        $('#banner').animate({marginLeft: "-400px"})
+        $('#banner').delay(700);
+        $('#banner').animate({marginLeft: "0"})        
+    });
+
+
+
+
+
+    var flag = 0;
+    function right() {
+            if(flag === 0 ) {
+            document.querySelector("#banner").style.marginLeft="-200px";
+            flag = flag + 1;
+        } else if(flag === 1) {
+            document.querySelector("#banner").style.marginLeft="-400px";
+            flag = flag + 1;
+        } else if(flag === 2) {
+            document.querySelector("#banner").style.marginLeft="0";
+            flag = 0;
+        }
+    }
+
+    function left() {
+        if(flag === 0) {
+            document.querySelector("#banner").style.marginLeft="-400px";
+            flag = 2;
+        } else if(flag === 2) {
+            document.querySelector("#banner").style.marginLeft="-200px";
+            flag = 1;
+        } else if(flag === 1 ) {
+            document.querySelector("#banner").style.marginLeft="0";
+            flag = 0;
+        }
+    }
+    
+</script>
+</html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- 상단시작 -->
@@ -71,18 +72,125 @@
         </section>
         <!-- section1 끝 -->
 
+
+        <!-- section2 시작 -->
+        <section id="section2">
+            <div class="wrap">
+                <div class="left w32p">
+                    <a href="#" class="img1"><img src="/img/banner.png" alt="배너이미지"></a>                    
+
+                </div>
+                <div class="right w66p ml2p">
+                    <div id="board_notice" class="board_box">
+                        <!-- 공지사항 -->
+                        <div class="board_title">
+                            <span class="bold">공지사항</span>
+                            <a href="#" class="right">more</a>
+                            <div class="line"></div>
+                            <div class="board_content">
+                                <ul>
+                                    <li><a href="#">2월 교육일정 안내...</a>
+                                        <span>2022-01-14</span></li>
+                                    <li><a href="#">시험일정 안내...</a>
+                                        <span>2022-01-14</span></li>
+                                    <li><a href="#">합격자 발표 안내...</a>
+                                        <span>2022-01-14</span></li>
+                                    <li><a href="#">코로나19감염예방...</a>
+                                        <span>2022-01-14</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="board_pds" class="board_box">
+                        <!-- 자료실 -->
+                        <div class="board_title">
+                            <span class="bold">자료실</span>
+                            <a href="#" class="right">more</a>
+                            <div class="line"></div>
+                            <div class="board_content">
+                                <ul>
+                                    <li><a href="#">자가진단확인서...</a>
+                                        <span>2022-01-15</span></li>
+                                    <li><a href="#">스마트홈관리사...</a>
+                                        <span>2022-01-15</span></li>
+                                    <li><a href="#">모의고사 예제...</a>
+                                        <span>2022-01-15</span></li>
+                                    <li><a href="#">실기 기출문제...</a>
+                                        <span>2022-01-15</span></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>                
+            </div>
+
+        </section>
+        <!-- section2 끝 -->
+        
+        <!-- section3 시작 --> 
+        <section id="section3">
+            <div class="wrap">
+                <!-- 배너 시작 -->
+                <div class="area_banner">
+                    <div class="box_banner"><a href="#"><img src="/img/banner1.png" alt="배너1"></a></div>
+                    <div class="box_banner"><a href="#"><img src="/img/banner2.png" alt="배너2"></a></div>
+                    <div class="box_banner"><a href="#"><img src="/img/banner3.png" alt="배너3"></a></div>
+                </div>                
+                <!-- 배너 끝 -->
+<!-- <br><br><br><br> -->
+                <!-- 사이트맵 시작 -->
+                <div class="area_sitemap">
+                    <h3>커뮤니티</h3>
+                    <ul>                        
+                        <li><a href="#">공지사항&nbsp;&nbsp; : </a></li>
+                        <li><a href="#">수상경력&nbsp;&nbsp; : </a></li>
+                        <li><a href="#">동영상&nbsp;&nbsp; : </a></li>
+                        <li><a href="#">포토갤러리&nbsp; : </a></li>
+                        <li><a href="#">수강후기&nbsp;&nbsp; : </a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </div>
+                <!-- 사이트맵 끝 -->
+            </div>
+        </section>
+        <!-- section3 끝 -->
+
     </main>
     <!-- 메인 끝 -->
 
 
-
-
-
     <!-- 하단 시작 -->
     <footer>
+        <div class="wrap">
+            <img src="/img/Logo2.png" alt="하단로고" class="left">
+            <div class="left">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                </ul>
+                <p>
+                    (우)00000 광주광역시 남구 효덕로 277 전산관 515호 <br>
+                    TEL : 062-670-0000 FAX : 062-671-0000 <br>
+                    사업자등록번호 : 111-22-33333 대표자 : 홍길동 <br>
+                    Copyright  2022 광주대 AI소프트웨어학과 All right reserved. <br>
+                </P>
+            </div>
+        </div>
 
     </footer>
     <!-- 하단 끝 -->
 
 </body>
 </html>
+
+<script>
+    setInterval(function(){ 
+        $('#banner').delay(700);        
+        $('#banner').animate({marginLeft: "-200px"})
+        $('#banner').delay(700);
+        $('#banner').animate({marginLeft: "-400px"})
+        $('#banner').delay(700);
+        $('#banner').animate({marginLeft: "0"})        
+    });
+
+</script>

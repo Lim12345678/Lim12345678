@@ -38,7 +38,102 @@ a, a:hover, a:link, a:active {
     max-width: 800px;
     margin: 0 auto;    
 }
-
+.bold {
+    font-weight: 600;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+.gray {
+    color: gray;
+}
+.w50 {
+    width: 50px;
+}
+.w100 {
+    width: 100px;
+}
+.w200 {
+    width: 200px;
+}
+.w32p {
+    width: 32%;
+}
+.w66p {
+    width: 66%;
+}
+.h50 {
+    height: 50pc;
+}
+.h100 {
+    height: 100px;
+}
+.h200 {
+    height: 200px;
+}
+.bg_red {
+    background-color: red;
+}
+.bg_green {
+    background-color: green;
+}
+.bg_white {
+    background-color: white;
+}
+.bg_white {
+    background-color: blac
+}
+.big {
+    font-size: 2em;
+}
+.small {
+    font-size: 0.5em;
+}
+.m10 {
+    margin: 10px;
+}
+.m50 {
+    margin: 50px;
+}
+.m100 {
+    margin: 100px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.ml2p {
+    margin-left: 2%;
+}
+.p10 {
+    padding: 10px;
+}
+.p50 {
+    padding: 50px;
+}
+.p100 {
+    padding: 100px;
+}
+.mt100 {
+    margin-top: 100px;
+}
 /* 상단 스타일 */
 .top {
     background-color: #1B4FA0;
@@ -183,7 +278,7 @@ section:after {
 
 #section1 #box3:hover {
     background-color: #1995ee;
-}
+} 
 
 #section1 #box4 {
     background-color: #F6893E;
@@ -192,4 +287,147 @@ section:after {
 
 #section1 #box4:hover {
     background-color: #ff9d5c;
+}
+#section2 .img1 {
+    
+}
+
+.img2, .img3, .img4 {
+    /* visibility: hidden; */
+}
+
+#board_notice {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 11%;        
+}
+.board_title>a {
+    /* more */
+    font-size: 0.7rem;    
+    position: relative;
+    top: 12px;
+    color: #2083CB;
+        
+}
+.line {
+    background-color: #005BAA;
+    width: 215px;
+    height: 2px;
+    margin-top: 8px;    
+    margin-bottom: -19px;
+}
+.board_content a {
+    font-size: 0.7rem;    
+}
+
+.board_content a:hover {
+    color: tomato;
+}
+
+.board_content span {
+    font-size: 0.6rem;
+    color: #666666;
+    float: right;
+    position: relative;
+    top: 8px;    
+}
+
+#board_pds {
+    float: left;
+    width: 40%;    
+}
+
+/* section3 */
+#section3 {
+    clear: both;    
+    background-color: #DDDDDD;
+    padding: 20px 0;
+
+
+}
+
+#section3 .box_banner {
+    float: left;
+}
+
+#section3 .box_banner {
+    margin-right: 3%;
+    
+}
+
+#section3 .area_sitemap {
+    width: 100%;
+    margin-top: 10px;    
+}
+
+#section3 .area_sitemap h3 {
+    float: left;
+    background-color: #3363c8;
+    color: white;
+    font-weight: 600;
+    padding: 20px 0;
+    width: 13%;
+    text-align: center;
+}
+
+#section3 .area_sitemap ul {
+    float: left;
+    width: 78%;    
+    margin: 20px auto;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid gray; 
+}
+
+#section3 .area_sitemap ul li {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+#section3 .area_sitemap ul li a {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+#section3 .area_sitemap ul li a:hover {
+    color: tomato;
+}
+
+/* 하단 */
+footer {    
+    color: #666;
+}
+footer img {
+    margin-top: 40px;
+}
+
+
+footer ul {    
+    padding-left: 30px;
+    margin-bottom: 10px;    
+}
+
+footer ul li {
+    display: inline-block;    
+    padding: 0 10px;    
+    border-right: 1px solid #888;    
+    /* background-color: lightcoral;     */
+}
+footer ul li a {    
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+footer ul li:last-child {
+    border: none;
+}
+
+footer p {    
+    padding-left: 40px;
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 18px;
 }

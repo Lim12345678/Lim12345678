@@ -1,0 +1,255 @@
+@charset 'utf8';
+
+/* 공통 */
+:root {
+    --default-font-size: 14px;
+    --img-box1 : url('http://img.cuenet.kr/exam/SWP/2017A/box1_1_bg.png');
+    --img-box2 : url('http://img.cuenet.kr/exam/SWP/2017A/box1_2_bg.png');
+    --img-box3 : url('http://img.cuenet.kr/exam/SWP/2017A/box1_3_bg.png');
+    --img-box4 : url('http://img.cuenet.kr/exam/SWP/2017A/box1_4_bg.png');
+}
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;   
+   font-size: 14px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: '굴림', '돋움', Gullim, Dotum, sans-serif;
+
+    background-color: white;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: #222;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* 상단 */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .top {
+    background-color: #1b4fa0;
+}
+
+header .bg {
+    background-color: #143b78;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+header .gnb {
+    display: flex;
+}
+
+header .gnb li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+header .gnb li a:hover {
+    color: #ccc;
+}
+
+nav {
+    background-color: #eee;
+}
+
+nav .logo {
+    padding: 16px 0;
+}
+
+nav .lnb {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+nav .lnb li a {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* text-align: center; */
+}
+
+/* 메인 */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 섹션 */
+section {
+    margin-top: 25px;
+}
+
+section .wrap {
+    display: flex;
+    align-items: center;
+}
+
+/* 섹션1 */
+#section1 ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section1 ul li {
+    width: 23%;
+    min-height: 225px;
+    text-align: center;
+}
+
+#section1 ul li a {
+    color: white;
+    display: block;
+    padding: 50px 0;
+}
+
+#section1 ul li h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+#section1 ul li p {
+    font-size: 1.2rem;
+    margin: 15px auto;
+    border: 1px solid white;
+    padding: 5px 15px;
+    width: 70%;
+    /* display: inline-block; */
+}
+
+#section1 .box {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    /* background-size: cover; */
+}
+
+#section1 #box1 {
+    background-color: #00a882;
+    background-image: var(--img-box1);
+}
+
+#section1 #box1:hover {
+    background-color: #00c29a;
+}
+
+#section1 #box2 {
+    background-color: #2263c8;
+    background-image: var(--img-box2);
+}
+
+#section1 #box2:hover {
+    background-color: #2875db;
+}
+
+#section1 #box3 {
+    background-color: #2083cb;
+    background-image: var(--img-box3);
+}
+
+#section1 #box3:hover {
+    background-color: #2592df;
+}
+
+#section1 #box4 {
+    background-color: #ff893e;
+    background-image: var(--img-box4);
+}
+
+#section1 #box4:hover {
+    background-color: #ff955c;
+}
+
+/* 섹션2 */
+#section2 .wrap {
+    align-items: flex-start;
+}
+
+#section2 .right {
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;    
+}
+
+#section2 .board_title {
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px solid #005baa;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section2 .board_title a {
+    color: #2083cb;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+#section2 .board_content {
+    padding-top: 10px;
+}
+
+#section2 .board_content li {
+    line-height: 1.6rem;
+    padding-left: 10px;
+    background: url('http://img.cuenet.kr/exam/SWP/2017A/bullet1.png') no-repeat left center;
+}
+
+#section2 .board_content li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+#section2 .board_content li span {
+    font-size: 0.9rem;
+}
+
+/* 섹션3 */
+
+/* 하단 */
+footer {
+
+}
